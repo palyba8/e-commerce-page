@@ -158,7 +158,7 @@ export default function Productgallery(props) {
     if (product.isModal) return;
     const interval = setInterval(switchImage, 7000);
     return () => clearInterval(interval);
-  }, [product]);
+  });
 
   return (
     <div className="product-gallery">
