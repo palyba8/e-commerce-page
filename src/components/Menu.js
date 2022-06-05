@@ -55,16 +55,16 @@ function Menu(props) {
               <button>Collections</button>
             </li>
             <li className="header-menu-items">
-              <button href="#">Men</button>
+              <button >Men</button>
             </li>
             <li className="header-menu-items">
-              <button href="#">Women</button>
+              <button >Women</button>
             </li>
             <li className="header-menu-items">
-              <button href="#">About</button>
+              <button >About</button>
             </li>
             <li className="header-menu-items">
-              <button href="#">Contact</button>
+              <button >Contact</button>
             </li>
           </ul>
         </nav>
@@ -74,14 +74,14 @@ function Menu(props) {
       </div>
 
       <div className="header-cart">
-        <button className="header-cart-img" href="#" onClick={showCart}>
+        <button className="header-cart-img"  onClick={showCart}>
           {products.cart > 0 && (
             <div className="header-cart-amount">{products.cart}</div>
           )}
           <img src="./images/icon-cart.svg" alt="cart" />
         </button>
         {products.isCartOpen && CartElement}
-        <button className="header-cart-link" href="#">
+        <button className="header-cart-link" >
           <img
             className="header-cart-avatar"
             src="./images/image-avatar.png"

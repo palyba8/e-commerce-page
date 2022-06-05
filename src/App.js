@@ -85,7 +85,7 @@ function App() {
         deleteCartProduct={deleteCartProduct}
         showCart={showCart}
       />
-      <main className="product">
+      <div className="product">
         <ProductGalery products={products} setProducts={setProducts} />
         <ProductDetails
           product={products.product}
@@ -93,7 +93,7 @@ function App() {
           changeProductAmount={changeProductAmount}
           addToCart={addToCart}
         />
-      </main>
+      </div>
     </div>
   );
 }
