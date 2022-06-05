@@ -77,28 +77,30 @@ body {
 .header-menu-items {
   list-style: none;
 }
-.header-menu-items a {
-  --spacing: 1em;
+.header-menu-items button {
+  --padding: 1em;
   text-decoration: none;
+  background-color: transparent;
+  border: none;
   color: var(--dark-grayish-blue);
   position: relative;
-  padding: calc(var(--spacing) / 2) var(--spacing);
+  padding: calc(var(--padding) / 2) var(--padding);
 }
-.header-menu-items a:hover {
+.header-menu-items button:hover {
   color: var(--very-dark-blue);
 }
-.header-menu-items a:after {
+.header-menu-items button:after {
   content: "";
   position: absolute;
   bottom: -39px;
-  left: var(--spacing);
-  right: var(--spacing);
+  left: var(--padding);
+  right: var(--padding);
   height: 4px;
   background: var(--orange);
   transform: scaleX(0);
   transition: transform 150ms ease-in-out;
 }
-.header-menu-items a:hover::after {
+.header-menu-items button:hover::after {
   transform: scaleX(1);
 }
 .header-cart {
@@ -109,6 +111,8 @@ body {
   position: relative;
 }
 .header-cart-img {
+  border: none;
+  background-color: transparent;
   height: 22px;
   cursor: pointer;
   text-decoration: none;
@@ -126,7 +130,9 @@ body {
   right: -7px;
 }
 .header-cart-link {
-  border: 3px solid var(--light-grayish-blue);
+  background-color: transparent;
+  border-radius: 50%;
+  border: 3px solid transparent;
 }
 .header-cart-link:hover {
   border: 3px solid var(--orange);

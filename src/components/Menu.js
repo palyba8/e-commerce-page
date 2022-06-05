@@ -52,19 +52,19 @@ function Menu(props) {
         <nav className={navClass}>
           <ul className="header-menu">
             <li className="header-menu-items">
-              <a href="#">Collections</a>
+              <button>Collections</button>
             </li>
             <li className="header-menu-items">
-              <a href="#">Men</a>
+              <button href="#">Men</button>
             </li>
             <li className="header-menu-items">
-              <a href="#">Women</a>
+              <button href="#">Women</button>
             </li>
             <li className="header-menu-items">
-              <a href="#">About</a>
+              <button href="#">About</button>
             </li>
             <li className="header-menu-items">
-              <a href="#">Contact</a>
+              <button href="#">Contact</button>
             </li>
           </ul>
         </nav>
@@ -74,20 +74,20 @@ function Menu(props) {
       </div>
 
       <div className="header-cart">
-        <a className="header-cart-img" href="#" onClick={showCart}>
+        <button className="header-cart-img" href="#" onClick={showCart}>
           {products.cart > 0 && (
             <div className="header-cart-amount">{products.cart}</div>
           )}
           <img src="./images/icon-cart.svg" alt="cart" />
-        </a>
+        </button>
         {products.isCartOpen && CartElement}
-        <a className="header-cart-link" href="#">
+        <button className="header-cart-link" href="#">
           <img
             className="header-cart-avatar"
             src="./images/image-avatar.png"
             alt="avatar"
           />
-        </a>
+        </button>
       </div>
     </header>
   );

@@ -15,6 +15,11 @@
   --kumbhSans: "Kumbh Sans", sans-serif;
 }
 
+@mixin link {
+  background-color: transparent;
+  border: none;
+}
+
 // animations
 @keyframes visibility {
   from {
@@ -68,12 +73,13 @@ body {
     padding: 30px 0;
     &-items {
       list-style: none;
-      & a {
-        --spacing: 1em;
+      & button {
+        --padding: 1em;
         text-decoration: none;
+        @include link;
         color: var(--dark-grayish-blue);
         position: relative;
-        padding: calc(var(--spacing) / 2) var(--spacing);
+        padding: calc(var(--padding) / 2) var(--padding);
         &:hover {
           color: var(--very-dark-blue);
         }
@@ -81,8 +87,8 @@ body {
           content: "";
           position: absolute;
           bottom: -39px;
-          left: var(--spacing);
-          right: var(--spacing);
+          left: var(--padding);
+          right: var(--padding);
           height: 4px;
           background: var(--orange);
           transform: scaleX(0);
@@ -101,6 +107,8 @@ body {
     padding-right: 90px;
     position: relative;
     &-img {
+      border: none;
+      background-color: transparent;
       height: 22px;
       cursor: pointer;
       text-decoration: none;
@@ -118,7 +126,9 @@ body {
       right: -7px;
     }
     &-link {
-      border: 3px solid var(--light-grayish-blue);
+      background-color: transparent;
+      border-radius: 50%;
+      border: 3px solid transparent;
       &:hover {
         border: 3px solid var(--orange);
         border-radius: 50%;
@@ -430,7 +440,7 @@ body {
 .attribution {
   position: absolute;
   bottom: 0;
-  left:50%;
+  left: 50%;
   width: 100%;
   transform: translateX(-50%);
   font-size: 14px;
