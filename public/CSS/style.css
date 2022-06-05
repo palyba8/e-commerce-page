@@ -82,6 +82,7 @@ body {
   text-decoration: none;
   background-color: transparent;
   border: none;
+  cursor: pointer;
   color: var(--dark-grayish-blue);
   position: relative;
   padding: calc(var(--padding) / 2) var(--padding);
