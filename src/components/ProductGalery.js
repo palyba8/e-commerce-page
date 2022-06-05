@@ -33,7 +33,7 @@ export default function Productgallery(props) {
           width="12"
           height="18"
           xmlns="http://www.w3.org/2000/svg"
-          alt="previous"
+          data-direction="next"
         >
           <path d="M11 1 3 9l8 8" strokeWidth="3" fill="none" />
         </svg>
@@ -53,7 +53,7 @@ export default function Productgallery(props) {
           width="13"
           height="18"
           xmlns="http://www.w3.org/2000/svg"
-          alt="next"
+          data-direction="next"
         >
           <path d="m2 1 8 8-8 8" strokeWidth="3" fill="none" />
         </svg>
@@ -81,7 +81,7 @@ export default function Productgallery(props) {
   );
 
   function modalNavigation(event) {
-    const direction = event.target.dataset.direction || event.target.alt;
+    const direction = event.target.dataset.direction;
     if (direction === "next") {
       const imageIndex =
         product.currentImage === product.images.length - 1

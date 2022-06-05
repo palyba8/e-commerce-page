@@ -16,9 +16,9 @@ export default function ProductDetails(props) {
         </p>
         <p className="product-price-old">${product.oldPrice}</p>
       </div>
-
+      <></>
       <div className="product-add">
-        <div className="product-add-amount">
+        <label htmlFor="addProduct" className="product-add-amount">
           <div
             className="product-add-amount-img"
             onClick={(event) => changeProductAmount(event)}
@@ -42,7 +42,7 @@ export default function ProductDetails(props) {
           >
             <img src="./images/icon-plus.svg" alt="+" />
           </div>
-        </div>
+        </label>
         <button className="product-add-btn" onClick={addToCart}>
           <img src="./images/icon-cart-white.svg" alt="cart" /> Add to cart
         </button>
