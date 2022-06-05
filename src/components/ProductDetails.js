@@ -18,7 +18,7 @@ export default function ProductDetails(props) {
       </div>
       <></>
       <div className="product-add">
-        <label htmlFor="addProduct" className="product-add-amount">
+        <div className="product-add-amount">
           <div
             className="product-add-amount-img"
             onClick={(event) => changeProductAmount(event)}
@@ -26,6 +26,7 @@ export default function ProductDetails(props) {
           >
             <img src="./images/icon-minus.svg" alt="-" />
           </div>
+          <label htmlFor="addProduct"></label>
           <input
             className="product-add-amount-input"
             type="number"
@@ -33,6 +34,7 @@ export default function ProductDetails(props) {
             min="0"
             onChange={(event) => changeProductAmount(event)}
             name="addProduct"
+            id="addProduct"
             required
           />
           <div
@@ -42,7 +44,7 @@ export default function ProductDetails(props) {
           >
             <img src="./images/icon-plus.svg" alt="+" />
           </div>
-        </label>
+        </div>
         <button className="product-add-btn" onClick={addToCart}>
           <img src="./images/icon-cart-white.svg" alt="cart" /> Add to cart
         </button>
