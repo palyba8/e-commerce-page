@@ -26,7 +26,7 @@ export default function ProductDetails(props) {
           >
             <img src="./images/icon-minus.svg" alt="-" />
           </div>
-          <label className="product-input" htmlFor="addProduct">Number of products</label>
+          <label className="product-input" htmlFor="addProduct">
           <input
             className="product-add-amount-input"
             type="number"
@@ -36,7 +36,7 @@ export default function ProductDetails(props) {
             name="addProduct"
             id="addProduct"
             required
-          />
+          /></label>
           <div
             className="product-add-amount-img"
             onClick={(event) => changeProductAmount(event)}

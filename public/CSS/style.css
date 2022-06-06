@@ -305,8 +305,8 @@ body {
   margin-right: 15px;
 }
 .product-input {
-  position: absolute;
-  visibility: hidden;
+  display: grid;
+  place-content: center;
 }
 
 .modal-gallery {
