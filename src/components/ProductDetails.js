@@ -26,7 +26,7 @@ export default function ProductDetails(props) {
           >
             <img src="./images/icon-minus.svg" alt="-" />
           </div>
-          <label htmlFor="addProduct"></label>
+          <label className="product-input" htmlFor="addProduct">Number of products</label>
           <input
             className="product-add-amount-input"
             type="number"

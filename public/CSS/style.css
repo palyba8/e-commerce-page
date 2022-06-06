@@ -304,6 +304,10 @@ body {
   fill: white;
   margin-right: 15px;
 }
+.product-input {
+  position: absolute;
+  visibility: hidden;
+}
 
 .modal-gallery {
   position: absolute;
